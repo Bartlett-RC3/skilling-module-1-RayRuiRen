@@ -39,10 +39,9 @@ public class Session1Homework : MonoBehaviour
 
 
 
-    //"You need to pay!"
+
     float receipt(float number, float price)
     {
-        number = Convert.ToInt32(futureArchitects);
         return number * price;
     }
 
