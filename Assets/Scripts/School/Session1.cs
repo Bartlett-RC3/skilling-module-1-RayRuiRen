@@ -32,7 +32,12 @@ public class Session1 : MonoBehaviour {
     // 2.Functions
     // Scope -- Type -- Variables -- Body (Instructions)
 
-    // Use this for initialization
+
+
+
+
+
+
     void Start () {
         Debug.Log("Addition of 5 and 3 is: " + AddtionOfNumbers(5,3));
         myFloatArray[2] = 3.2f;
@@ -44,7 +49,6 @@ public class Session1 : MonoBehaviour {
         myIntegerList.Add(3);
     }
 	
-	// Update is called once per frame
 	void Update () {
         Debug.Log("Hello world!");
 	}
