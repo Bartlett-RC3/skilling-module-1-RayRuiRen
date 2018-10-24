@@ -36,17 +36,17 @@ public class Session1Homework : MonoBehaviour
     Dictionary<string, string> architects = new Dictionary<string, string>();
 
 
+    //-------------------------------------------------------------------------------------------//
 
 
-
-
-    float receipt(float number, float price)
+    // makes sense?
+    float Receipt(List<string> a, float price)
     {
-        return number * price;
+        return a.Count * price;
     }
 
 
-
+    //Other practice
     void Start()
     {
         futureArchitects.Add("CBR");
@@ -63,8 +63,10 @@ public class Session1Homework : MonoBehaviour
         if (architects.ContainsKey("1900s"))
         {
             Debug.Log( architects.Values + " is born in :"+ architects.Keys);
-            //string output = string.Format( "{0} is born in : {1}",architects.Values,architects.Keys);
-            //Console.WriteLine(output);
+
+
+            string output = string.Format( "{0} is born in : {1}",architects.Values,architects.Keys);
+            Debug.Log(output);
         }
     }
 
