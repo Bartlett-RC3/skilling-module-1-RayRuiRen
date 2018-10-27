@@ -31,11 +31,11 @@ public class Session3_RuiRen : MonoBehaviour
     {
         // Time
         Debug.Log("This computer can render a frame in : " + Time.deltaTime);
-        Debug.Log("Since I started playing the game thsi amount of time has passed: " + Time.time);
-        Debug.Log("Computer has counted this ammount of frames " + Time.realtimeSinceStartup);
+        Debug.Log("Since I started playing the game this amount of time has passed: " + Time.time);
+        Debug.Log("Computer has counted this amount of frames " + Time.realtimeSinceStartup);
 
         //Translation
-        //MOve children gameobjects in x axis
+        //Move children gameobjects in x axis
         foreach (Transform child in this.transform)
         {
 

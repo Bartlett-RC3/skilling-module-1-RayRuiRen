@@ -4,7 +4,7 @@
 public class Humans : MonoBehaviour 
 {
     // Properties
-    string objectName = "Octavian";
+    string objectName = "RuiRen";
     private int age = 32;
     float height = 170.5f;
     float energy = 100;
