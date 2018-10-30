@@ -17,7 +17,7 @@ public class Session4 : MonoBehaviour {
 	void Update () {
         StartCoroutine(createColumnCoroutine);
         Debug.Log(Time.time);
-        if(Time.time > 5)
+        if(Time.time > 5f)
         {
             StopCoroutine(createColumnCoroutine);
             StopAllCoroutines();
