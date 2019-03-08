@@ -14,16 +14,26 @@ public class ListenScript : MonoBehaviour
 
     void Update()
     {
-        if (!seen)
-        {
-            //GetComponent<Transform>().localScale = scale;
-            GetComponent<MeshRenderer>().enabled = true;
-            
-        }
-        else
+
+        ///// IF 
+        //if (!seen)
+        //{
+        //    //GetComponent<Transform>().localScale = scale;
+        //    if (GetComponent<MeshRenderer>() != null)
+        //    {
+        //        GetComponent<MeshRenderer>().enabled = true;
+        //    }
+        //}
+
+
+
+        if (seen)
         {
             //GetComponent<Transform>().localScale = new Vector3(0, 0, 0);
-            GetComponent<MeshRenderer>().enabled = false;
+            if (GetComponent<MeshRenderer>() != null)
+            {
+                GetComponent<MeshRenderer>().enabled = false;
+            }
 
         }
         seen = false;

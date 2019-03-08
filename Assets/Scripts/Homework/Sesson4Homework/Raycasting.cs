@@ -22,8 +22,12 @@ public class Raycasting : MonoBehaviour {
 	    if (Physics.Raycast(transform.position, raycastingDirection, out objectInFront))
 	    {
 	        Debug.Log("Object in front is" + objectInFront.transform.name);
+	        if (objectInFront.transform.GetComponent<ListenScript>()!=null)
+	        {
 	        objectInFront.transform.GetComponent<ListenScript>().seen = true;
-	    }
+
+}
+        }
 	}
 
 }
